@@ -2,17 +2,113 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Prototype Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #8892b0;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            gap: 16px;
+        }
+
+        li a {
+            display: block;
+            padding: 20px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #e2e8f0;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .bmc-container {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bmc-container a {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .bmc-container a:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            li a {
+                font-size: 1rem;
+                padding: 16px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>AI Prototype Collection</h1>
-    <ul>
-        <li><a href="https://typing-app-rho.vercel.app/typing" target="_blank">タイピング練習</a></li>
-        <li><a href="https://code-drill-psi.vercel.app/" target="_blank">React勉強（穴埋めと音声読み上げ）</a></li>
-        <li><a href="https://psyche-test-one.vercel.app/" target="_blank">性格診断（MBTIとエニアグラム）</a></li>
-    </ul>
-    <div>
-        <a href="https://www.buymeacoffee.com/cogwheellab"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=cogwheellab&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+    <div class="container">
+        <h1>AI Prototype Collection</h1>
+        <p class="subtitle">学習用プロトタイプ集</p>
+        <ul>
+            <li><a href="https://typing-app-rho.vercel.app/typing" target="_blank">⌨️ タイピング練習</a></li>
+            <li><a href="https://code-drill-psi.vercel.app/" target="_blank">📚 React勉強（穴埋めと音声読み上げ）</a></li>
+            <li><a href="https://psyche-test-one.vercel.app/" target="_blank">🧠 性格診断（MBTIとエニアグラム）</a></li>
+            <li><a href="https://stretch-timer-two.vercel.app/" target="_blank">⏱️ ストレッチタイマー</a></li>
+        </ul>
+        <div class="bmc-container">
+            <a href="https://www.buymeacoffee.com/cogwheellab" target="_blank">
+                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=cogwheellab&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee">
+            </a>
+        </div>
     </div>
 </body>
 </html>
